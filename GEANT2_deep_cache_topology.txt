@@ -1,0 +1,107 @@
+# GEANT2 Network Topology with 23 core routers, 20 consumers (c1-c20) and 1 CP
+router
+
+# node  comment     yPos    xPos
+Src1   NA        7       1
+Src2   NA        7       2
+Src3   NA        7       3
+Src4   NA        7       4
+Src5   NA        7       5
+Src6   NA        7       6
+Src7   NA        7       7
+Src8   NA        7       8
+Src9   NA        7       9
+Src10  NA        7       10
+Src11  NA        7       11
+Src12  NA        7       12
+Src13  NA        7       13
+Src14  NA        7       14
+Src15  NA        7       15
+Src16  NA        7       16
+Src17  NA        7       17
+Src18  NA        7       18
+Src19  NA        7       19
+Src20  NA        7       20
+R1     NA        21      11
+R2     NA        21      13
+R3     NA        21      12
+R4     NA        20      14
+R5     NA        18      12
+R6     NA        19      11
+R7     NA        18      15
+R8     NA        14      12
+R9     NA        19      5
+R10    NA        17      2
+R11    NA        16      15
+R12    NA        15      11
+R13    NA        15      1
+R14    NA        13      17
+R15    NA        12      16
+R16    NA        11      17
+R17    NA        9       13
+R18    NA        10      12
+R19    NA        12      2
+R20    NA        11      14
+R21    NA        10      10
+R22    NA        11      7
+R23    NA        11      6
+CP1    NA        22      12
+
+link
+
+# srcNode   dstNode     bandwidth   metric  delay   queue
+CP1         R1        20Mbps      1       10ms    100
+CP1         R2        20Mbps      1       10ms    100
+R1          R3        10Mbps      1       10ms    100
+R3          R2        10Mbps      1       10ms    100
+Src1        R19       10Mbps      1       10ms    100
+Src2        R19       10Mbps      1       10ms    100
+Src3        R19       10Mbps      1       10ms    100
+Src4        R19       10Mbps      1       10ms    100
+Src5        R19       10Mbps      1       10ms    100
+Src6        R19       10Mbps      1       10ms    100
+Src7        R19       10Mbps      1       10ms    100
+Src8        R19       10Mbps      1       10ms    100
+Src9        R19       10Mbps      1       10ms    100
+Src10       R19       10Mbps      1       10ms    100
+Src11       R19       10Mbps      1       10ms    100
+Src12       R19       10Mbps      1       10ms    100
+Src13       R19       10Mbps      1       10ms    100
+Src14       R19       10Mbps      1       10ms    100
+Src15       R19       10Mbps      1       10ms    100
+Src16       R19       10Mbps       1       10ms    100
+Src17       R19       10Mbps      1       10ms    100
+Src18       R19       10Mbps      1       10ms    100
+Src19       R19       10Mbps      1       10ms    100
+Src20       R19       10Mbps      1       10ms    100
+R4          R2        8Mbps       1       10ms    100
+R5          R3        9Mbps       1       10ms    100
+R5          R8        9Mbps       1       10ms    100
+R7          R4        10Mbps      1       10ms    100
+R1          R6        7Mbps       1       10ms    100
+R6          R12       6Mbps       1       10ms    100
+R7          R8        6Mbps       1       10ms    100
+R8          R18       10Mbps      1       10ms    100
+R8          R17       9Mbps       1       10ms    100
+R8          R20       8Mbps       1       10ms    100
+R20         R11       7Mbps       1       10ms    100
+R11         R7        10Mbps      1       10ms    100
+R11         R14       10Mbps      1       10ms    100
+R14         R15       8Mbps       1       10ms    100
+R18         R21       10Mbps      1       10ms    100
+R15         R16       9Mbps       1       10ms    100
+R16         R17       8Mbps       1       10ms    100
+R17         R18       10Mbps      1       10ms    100
+R1          R9        7Mbps       1       10ms    100
+R9          R10       6Mbps       1       10ms    100
+R10         R13       8Mbps       1       10ms    100
+R13         R12       9Mbps       1       10ms    100
+R13         R9        10Mbps      1       10ms    100
+R12         R9        7Mbps       1       10ms    100
+R12         R8        8Mbps       1       10ms    100
+R12         R19       6Mbps       1       10ms    100
+R19         R23       10Mbps      1       10ms    100
+R19         R13       10Mbps      1       10ms    100
+R23         R22       10Mbps      1       10ms    100
+R21         R22       10Mbps      1       10ms    100
+R21         R12       10Mbps      1       10ms    100
