@@ -19,13 +19,13 @@ data = CSV.read("C:/Users/anselme/Google Drive/research/Simulation_Research/Jour
 # print(names(data))
 size_data_TNP = data[:Kilobytes]
 delay = data[:delay]
-# We ignored support counts becouse we know InDataName size  in terms of Kilobytes
+# We ignored support counts becouse we know Data size  in terms of Kilobytes
 size_data_ANP = data[:Kilobytes]
 f_n_d= zeros(size(size_data_ANP)) # Initiliazation of decision vector to 0
 Number_TNP = size(size_data_ANP)
 bidding_values = rand(Uniform(2,8), Number_TNP) # Vector of bidding values for contents
 consumer_prices = rand(Uniform(6,12), Number_TNP) # Vector of fixed prices for contents
-link_capacity = rand(Uniform(563353, 573353), Number_TNP) # Vector of link cacapcity
+link_capacity = rand(Uniform(563353, 573353), Number_TNP) # Vector of link capacity
 cache_capacity= rand(Uniform(473353, 573353), Number_TNP) # Vector of cache sizes
 delay_threshold = rand(Uniform(2.0, 8.0), Number_TNP) # Vector of delay threshold in termds of ms
 cache_price = 0.000003625 # Memory cost 0.003625 per Mb=  0.000003625 per Kb of cache capacity in USD
