@@ -24,7 +24,7 @@ data_frame_test1 = pd.read_csv("topology.csv")
 data_frame_test2 = pd.read_csv("traffic_dataset_4_test3.csv")
 # print(data_frame2.head(10))
 # In NDN data are requested by names. However, we know the connection between nodes
-# We can updated the traffic dataset based on  connection between nodes.
+# We can update the traffic dataset based on  connection between nodes.
 
 # Updated data_frame for network traffic
 df_test = pd.merge(data_frame_test1, data_frame_test2, on=['Node'])
@@ -45,7 +45,7 @@ data_frame_train1 = pd.read_csv("topology.csv")
 data_frame_train2 = pd.read_csv("traffic_dataset_4_train3.csv")
 # print(data_frame2.head(10))
 # In NDN data are requested by names. However, we know the connection between nodes
-# We can updated the traffic dataset based on  connection between nodes.
+# We can update the traffic dataset based on  connection between nodes.
 
 # Updated data_frame for network traffic
 df_train = pd.merge(data_frame_train1, data_frame_train2, on=['Node'])
